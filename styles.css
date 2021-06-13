@@ -40,6 +40,14 @@ hr {
 }
 
 
+/* basmalah */
+
+h5.basmalah {
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+}
 
 /* Containers */
 
@@ -54,6 +62,26 @@ hr {
 }
 
 
+/* images */
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+.blog-img {
+   padding: 2.5rem 0;
+}
+
+
+/* blog */
+
+.blog-subheading{
+    margin: 3rem 0;
+}
+.blog-content {
+    line-height: 1.5rem;
+    word-spacing: 0.2rem;
+}
 
 
 /* links */
@@ -73,7 +101,6 @@ hr {
     border-radius: 0.5rem;
     max-width: 140px;
     color: white;
-    
 }
 
 .link-primary:hover {
@@ -90,6 +117,19 @@ hr {
     background-color: var(--secondary-hover);
 }
 
+ .link-blog {
+ 
+    color: black;
+}
+.link-blog:hover {
+    color:var(--dark-grey);
+}
+
+
+
+
+
+
 /* lists */
 
 .list-non-bullet {
@@ -100,7 +140,9 @@ hr {
     display: inline;
    
 }
-
+ul {
+    padding-inline-start: 0px;
+}
 
 /* nav */
 
@@ -140,9 +182,10 @@ hr {
     width: 350px;
     display: block;
     margin: auto;
+    padding: 2rem 0;
 }
 .hero .hero-heading {
-    padding-top: 1rem;
+    padding: 2rem 0;
     color:var(--dark-grey);
     text-align: center;
 }
@@ -160,11 +203,18 @@ hr {
 .section h1{
 text-align: center;
 }
+.projects .section h1 {
+    text-align: left;
+}
 
 .ow {
     background-color: var(--offwhite);
+    
 }
 
+.section p{
+    padding-bottom: .75rem;
+}
 
 /* footer */
 
