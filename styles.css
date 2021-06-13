@@ -34,8 +34,9 @@ hr {
     padding-bottom: 2rem ;
 }
 
+
 .projects .container-center {
-    padding-bottom: 2rem ;
+    padding-bottom: 3rem ;
 }
 
 
@@ -51,6 +52,8 @@ hr {
     margin:auto;
     max-width: 600px;
 }
+
+
 
 
 /* links */
@@ -172,6 +175,7 @@ text-align: center;
     color: white;
     text-align: center;
     border-top-right-radius: 1rem;
+    margin-top: 3rem;
 }
 
 .footer a {
