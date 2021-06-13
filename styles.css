@@ -250,3 +250,15 @@ text-align: center;
 }
 
 
+
+
+
+/* media queries */
+
+@media(max width==380)
+{
+    a {
+        display: block;
+        margin: 1rem 0;
+    }
+}
