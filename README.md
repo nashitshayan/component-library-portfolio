@@ -1,2 +1,10 @@
-# component-library-portfolio
- making a component library for my portfolio from scratch and then using it to build my portfolio. Everything done in pure HTML and CSS
+# Nashit's Portfolio
+
+This is my personal web dev portfolio in the making.
+So far I've learned:
+1. Javascript
+1. NodeJs
+1. CLI 
+1. CHALK
+
+ 
