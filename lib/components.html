@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>component-library-for-portfolio</title>
+    <link rel="stylesheet" href="/styles.css">
 </head>
 
 <body>
@@ -37,10 +38,17 @@
     <h2>@containers</h2>
 
     <h3>@fluid container</h3>
-    <p>This is going to be a fluid container. It will go full width of the page. With some margin.</p>
+
+    <div class="container-fluid">
+        This is going to be a fluid container. It will go full width of the page. With some margin.
+    </div>
+
 
     <h3>@center container</h3>
-    <p>This is going to be a center container. It will go till a given width and center content.</p>
+    <div class="container-center">
+        This is going to be a center container. It will go till a given width and center content.
+    </div>
+
 
     <hr>
 
@@ -49,8 +57,8 @@
 
     <h2>@links</h2>
 
-    <a href="/">Primary Link</a>
-    <a href="/">Secondary Link</a>
+    <a class="link link-primary" href="/">Primary Link</a>
+    <a class="link link-secondary" href="/">Secondary Link</a>
 
     <hr>
 
@@ -60,7 +68,7 @@
 
     <h3>unordered lists</h3>
     <p>We don't want to show bullets in the unordered list. We'll remove that with CSS.</p>
-    <ul>
+    <ul class="list-non-bullet ">
         <li>itemOne</li>
         <li>itemTwo</li>
         <li>itemThree</li>
@@ -69,13 +77,16 @@
     <h3>inline lists</h3>
     <p>Instead of going in a new row, this will be a list which will take columns.</p>
 
-    <ul>
-        <li>itemOne</li>
-        <li>itemTwo</li>
-        <li>itemThree</li>
+    <ul class="list-non-bullet ">
+        <li class="list-item-inline">itemOne</li>
+        <li class="list-item-inline">itemTwo</li>
+        <li class="list-item-inline">itemThree</li>
     </ul>
 
-    <ol>
+    <h3>reverse order lists</h3>
+    <p>Counting will go in reverse for this list.</p>
+
+    <ol reversed>
         <li>something</li>
         <li>something else</li>
         <li>something elser</li>
@@ -87,14 +98,23 @@
 
     <h2>@nav</h2>
     <p>Navigation is used on the top of the page and used to get to different pages.</p>
+    <nav class="navigation container-fluid ">
+        <div class="navigation-heading">theBrandName</div>
 
-    <div>theBrandName</div>
+        <ul class="list-non-bullet nav-items">
+            <li class="list-item-inline">
+                <a class="link link-active" href="/">home</a>
+            </li>
 
-    <ul>
-        <li><a href="/">home</a></li>
-        <li><a href="/">products</a></li>
-        <li><a href="/">about</a></li>
-    </ul>
+            <li class="list-item-inline">
+                <a class="link" href="/">products</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/">about</a>
+            </li>
+        </ul>
+    </nav>
+
 
     <hr>
 
@@ -102,9 +122,13 @@
 
     <h2>@header</h2>
 
-    <img src="/images/undraw_programming_2svr.svg" alt="">
 
-    <h1>this is an h1 inside header</h1>
+    <header class="hero">
+        <img class="hero-img" src="/images/undraw_programming_2svr.svg" alt="">
+
+        <h1 class="hero-heading">this is an h1 inside <span class="heading-inverted">header</span></h1>
+    </header>
+
 
     <hr>
 
@@ -115,24 +139,32 @@
     <p>A section is used to seperate parts of pages. In marketing websites you would have seen a header followed by
         sections of features, team, pricing, contact info etc.</p>
 
-    <h3>@normal section</h3>
 
-    <section>
-        <h2>heading inside section</h2>
+    <h3>@white section</h3>
 
-        <p>Text defining this section and many more things.</p>
+    <section class="section">
 
-        <a href="/">Primary Button</a>
+        <div class="container-fluid container-center">
+            <h1>heading of this white section</h1>
+
+            <p>Text defining this section and many more things. This will have white background.</p>
+
+            <a class="link link-primary" href="/">Primary Button</a>
+        </div>
+
     </section>
 
     <h3>@an off white section</h3>
 
-    <section>
-        <h2>inside off white section</h2>
+    <section class="section ow">
+        <div class="container-fluid container-center">
+            <h1>inside off white section</h1>
 
-        <p>Text defining this section and many more things.</p>
+            <p>Text defining this section and many more things.This will have grey background.</p>
 
-        <a href="/">Primary Button</a>
+            <a class="link link-primary" href="/">Primary Button</a>
+        </div>
+
     </section>
     <hr>
 
@@ -140,19 +172,19 @@
 
     <h2>@footer</h2>
 
-    <footer>
-        
-        <div>header inside footer</div>
-        
-        <ul>
-            <li>
-                <a href="/">socialOne</a>
+    <footer class="footer">
+
+        <div class=footer-header>header inside footer</div>
+
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link" href="/">socialOne</a>
             </li>
-            <li>
-                <a href="/">socialTwo</a>
+            <li class="list-item-inline">
+                <a class="link" href="/">socialTwo</a>
             </li>
-            <li>
-                <a href="/">socialThree</a>
+            <li class="list-item-inline">
+                <a class="link" href="/">socialThree</a>
             </li>
         </ul>
     </footer>
