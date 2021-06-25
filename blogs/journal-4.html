@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template-blog</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <!-- nav -->
+
+    <nav class="navigation container-fluid ">
+        <div class="navigation-heading">alMuhaymin</div>
+
+        <ul class="list-non-bullet nav-items">
+            <li class="list-item-inline">
+                <a class="link " href="/">home</a>
+            </li>
+
+            <li class="list-item-inline">
+                <a class="link " href="/projects.html">projects</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link link-active" href="/blogs/blogs.html">blogs</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container-center blog-content">
+        <h5 class="basmalah">In the Name of Allah, the Most Gracious, the Most Merciful.</h5>
+        <h1>git, github, VSCode, and hosting</h1>
+        <small>June 07, 2021</small>
+
+        <!-- image -->
+
+        <img class="responsive blog-img" src="/images/journal-3-img.jpg" alt="">
+
+        <p>In the lesson 2 of levelZero, I learned :</p>
+        <h2 class="blog-subheading">HTML & CSS done right</h2>
+
+        <p>I've been familiar with HTML and CSS for quite some time now, but I never really built something from sratch.
+            There's more to building a good website than just knowing all the properies.</p>
+        <p>A good tutor makes all the difference. Most of the tutorials that I've followed use bootstrap for styling.</p>
+        <p>Tanay, however, taught us the concept of building a component library.</p>
+
+        <h2 class="blog-subheading">what's a commponent library?</h2>
+
+        <p>At first glance, a website may appear like a single unit. However, on close inspection, we find that it is in fact made of small blocks or components that have been assembled to make the website look the way it is. For eg : navigation bar, header, section, footer, links, lsits etc. A component library is nothing but a collection of the different unis or fragments of code that serve a particular purpose. Making a component library from sratch means that you'll disect the website and write html&css for each part. This makes the job of building a website a piece of cake. It's also useful becauese you can reuse the same components to build multiple websites, that each serve a different purpose.</p>
+
+
+
+        <h2 class="blog-subheading">anatomy of an HTML file</h2>
+
+        <p>The various tags and elements in HTMl can feel overwhelming at first, but worry not. It's easier to understand when you think of it as any other document. A typical official document will have heading and a body. Inside the body, the content can be divided into different small components. You have the sub headings, the paragraphs, etc. Some text is in bold, some is in italics. The HTML document is similar in that regard. These various tags and elements help the browser identify the type of the content, and then it displays it accordingly. The common basic HTML tags are easy to understand. Of coursse, HTML is vast, but the good thing is that you don't need to know all of them. Just understand the few basic ones to get started and you'll learn more as you go along. Same thing goes for CSS, there are so many different properties that trying to memorize them all is a bad idea. Here google searches and documentation play a vital role. Therefore, it's important that some time is invested in understanding how to do effective google searches and hhow to read documentation.</p>
+
+        <h2 class="blog-subheading">what is semantic HTML and why is it useful?</h2>
+
+        <p>Once we get past the tutorial phase and delve into the real world of web development, we have to consider some things while we build our website. One of those is accessibility. When buiding our website, we have to keep in mind that some of our users may require a screen reader. So it is quite important to use the relevant tags, as they'll be identified by the screen reader. These are called semantic tags. Using these tags makes it explicitly clear what the content is about. For eg: table , list etc. Using these semantic HTML tags makes things very clear for the developers as well as the browser. Anyone who will read your code will understand what you're doing. If you put everything in div, it doesn't give away any information about what the content is about. However, when you put in section, header, nav, article, aside etc, the reader knows exactly what to expect. As web developers, we always have to give consideration to the needs of our users.</p>
+
+        <h2 class="blog-subheading">make it responsive</h2>
+        <p>While building our website, we need to make sure that no matter what device the user views our website in, they'll have a good experience.Many times we notice that a wesbite will be fine when viewed in desktop, but on mobile it just looks pathetic and clunky. This can be easily managed if we follow good practices when writing our good. This includes using semantic tags wherever appropriate. For example, you can make a navigation panel using a div, but it won't be responsive. You can try it out yourself. As you reduce the sice of the browser window, the navigation panel will not resize accordingly. This can be easily fixed if we use the nav tag.</p>
+        <p>An advance method is using media queries. The below example will help you understand :</p>
+        <p>@media (max-width: 400px)
+            {
+              display: block;
+            }</p>
+
+        <p>What this little code with do is, it will inform the browser that when the width is less than or equal to 400, do whatever is in the {} block. Media queries can be super useful. If you want to learn more about them, refer to this : https://css-tricks.com/a-complete-guide-to-css-media-queries/</p>  
+
+
+
+        <h2 class="blog-subheading">kiss - keep it simple, stupid</h2>
+
+        <p>When I was playing around with CHALK library and trying to make my little CLI app more appealing, I ended up using many different colors and styles. I mean, I put a chalk.black.bgCyan.bold in there! XD When I showed it to my friend, he laughed at it and told me to use the kiss formula: keep it simple, stupid!</p>
+
+           <p>Tanay said something similar, that we shouldn't overcomplicate things. If something can be done in an easy way, we shouldn't go out of our way to make it difficult. This made me realise that I was wasting too much time and energy on things that could be done very easily.</p>
+
+
+
+    </div>
+    <!-- heading -->
+
+
+    <!-- footer -->
+    <footer class="footer">
+
+        <div class=footer-header>connect with me</div>
+
+        <ul class="social-links list-non-bullet ul-link">
+            <li class="list-item-inline">
+                <a class="link" href="https://github.com/nashitshayan">github</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://www.linkedin.com/in/nashit-shayan-k-323373139/">linkedIn</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="https://twitter.com/nashitshayan">twitter</a>
+            </li>
+        </ul>
+    </footer>
+
+
+
+</body>
+
+</html>
