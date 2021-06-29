@@ -103,8 +103,19 @@ h5.basmalah {
     color: white;
 }
 
+.link-primary:hover, .link-secondary:hover, .link-blog:hover {
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    
+}
 .link-primary:hover {
-    background-color: var(--primary-hover);
+    animation-name: hover-primary;
+    
+}
+@keyframes hover-primary {
+    100% {
+        background-color: var(--primary-hover);
+    }
 }
 
 .link-secondary {
@@ -114,7 +125,13 @@ h5.basmalah {
     border: 1px solid var(--primary-color);
 }
 .link-secondary:hover {
-    background-color: var(--secondary-hover);
+    animation-name: hover-secondary;
+   
+}
+@keyframes hover-secondary {
+    100% {
+        background-color: var(--secondary-hover);
+    }
 }
 
  .link-blog {
@@ -122,10 +139,14 @@ h5.basmalah {
     color: black;
 }
 .link-blog:hover {
-    color:var(--dark-grey);
+    
+    animation-name: hover-blog;
 }
-
-
+@keyframes hover-blog {
+    100% {
+        color:var(--dark-grey);
+    }
+}
 
 
 
